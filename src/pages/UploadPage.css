@@ -602,3 +602,82 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* Responsive card for desktop */
+.responsive-card {
+  width: 100%;
+  max-width: 900px;
+  min-width: 0;
+  padding: 3vw 6vw;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+/* Logo card for logo page: keeps size stable before image loads */
+.logo-card {
+  min-width: 630.72px;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: min-height 0.3s;
+}
+
+/* Center loading and error messages in logo card */
+.logo-card > p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .responsive-card {
+    max-width: 95vw;
+    min-width: 260px;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(121, 69, 133, 0.10);
+    width: 100%;
+  }
+
+  .logo-card {
+    min-width: 0;
+    min-height: 180px;
+  }
+}
+
+/* Responsive logo image */
+.responsive-logo-image {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #f3eaff;
+  display: block;
+  cursor: crosshair;
+}
+
+@media (max-width: 600px) {
+  .responsive-logo-image {
+    max-width: 95vw;
+    max-height: 50vw;
+    border-radius: 8px;
+  }
+}
+
+.main-bg-container {
+  min-width: 0;
+}
+@media (min-width: 700px) {
+  .main-bg-container {
+    min-width: 630px;
+  }
+}

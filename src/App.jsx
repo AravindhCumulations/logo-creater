@@ -12,8 +12,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<UploadPage />} />
-        <Route path="/logo" element={<LogoPage />} />
+        <Route path=":bucketname" element={<UploadPage />} />
+        <Route path=":bucketname/logo" element={<LogoPage />} />
       </Routes>
     </BrowserRouter>
   )
