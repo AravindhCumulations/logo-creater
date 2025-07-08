@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { MagnifierContainer,
-  SideBySideMagnifier, GlassMagnifier, Magnifier } from 'react-image-magnifiers';
 
 const LOGO_API_URL = 'https://bpshrp37ol.execute-api.us-east-1.amazonaws.com/v1/';
 const HEADER_GRADIENT = 'linear-gradient(90deg, #ff914d 0%, #794585 100%)';
@@ -120,14 +118,9 @@ const LogoPage: React.FC = () => {
           {error && <p style={{ color: '#ff914d', fontWeight: 500 }}>{error}</p>}
           {logoUrl && (
             <div style={{ width: '100%', height: '100%', marginBottom: 16, maxHeight: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <SideBySideMagnifier
-                imageSrc={logoUrl}
-                imageAlt="Logo"
-                largeImageSrc={logoUrl + '?w=1600'}
-                alwaysInPlace={false}
-                fillAvailableSpace={true}
-                zoomContainerBorder="1px solid #ccc"
-                zoomContainerBoxShadow="0 4px 16px rgba(0,0,0,0.1)"
+              <img
+                src={logoUrl}
+                alt="Logo"
                 className="responsive-logo-image"
                 style={{
                   width: '100%',
@@ -137,7 +130,6 @@ const LogoPage: React.FC = () => {
                   borderRadius: 12,
                   background: '#f3eaff',
                   display: 'block',
-                  cursor: 'crosshair',
                   objectFit: 'contain',
                 }}
               />
