@@ -7,6 +7,7 @@ import './UploadPage.css';
 import { useNavigate, useParams } from 'react-router-dom';
 import AppHeader from '../components/AppHeader';
 import axios from 'axios';
+import './style.css'
 
 // UploadPage component
 const UploadPage: FC = () => {
@@ -232,6 +233,17 @@ const UploadPage: FC = () => {
   // --- Render ---
   return (
     <div className="main-bg-container" style={{ minHeight: '90vh', background: 'linear-gradient(120deg, #fff7f0 0%, #f3eaff 100%)', display: 'flex', flexDirection: 'column' }}>
+      <div
+        className='c1'
+      />
+      {/* Bottom Left Pink/Purple/Blue Blob */}
+      <div
+        className='c2'
+      />
+      {/* Right Bottom Blue Blob */}
+      <div
+        className='c3'
+      />
       {/* Header */}
       <header style={{
         width: '100%',
@@ -260,7 +272,6 @@ const UploadPage: FC = () => {
       >
         <div
           style={{
-            background: '#fff',
             borderRadius: 0,
             boxShadow: 'none',
             padding: '3vw 6vw',

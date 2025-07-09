@@ -73,16 +73,16 @@ const LogoPage: React.FC = () => {
       {/* Header */}
       <header style={{
         width: '100%',
-        padding: '18px 0 16px 0',
+        padding: '10px 0 8px 0',
         background: HEADER_GRADIENT,
         color: 'white',
         textAlign: 'center',
         fontWeight: 700,
-        fontSize: 28,
+        fontSize: 24,
         letterSpacing: 1,
         boxShadow: '0 2px 8px rgba(121, 69, 133, 0.08)'
       }}>
-        <span style={{ fontFamily: 'Inter, sans-serif', fontWeight: 800, fontSize: 32 }}>Collage</span>
+        <span style={{ fontFamily: 'Inter, sans-serif', fontWeight: 800, fontSize: 26 }}>Collage</span>
       </header>
 
       {/* Main Content */}
@@ -98,7 +98,6 @@ const LogoPage: React.FC = () => {
       >
         <div
           style={{
-            background: '#fff',
             borderRadius: 0,
             boxShadow: 'none',
             padding: '3vw 6vw',

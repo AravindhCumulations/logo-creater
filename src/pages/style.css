@@ -1,0 +1,42 @@
+.c1{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    border-radius: 50%;
+    width: 571px;
+    height: 571px;
+    background: linear-gradient(90.01deg, #f8d665 -6.24%, #ff7a00 100%);
+    opacity: 0.25;
+    filter: blur(123px);
+    z-index: -5;
+    will-change: transform, opacity;
+}
+
+.c2{
+    position: absolute;
+    top: 177px;
+    left: 0;
+    border-radius: 50%;
+    width: 708px;
+    height: 710px;
+    background: linear-gradient(140.81deg, #ff5d5d 8%, #c04cad 48.81%, #1857d1 101.59%);
+    opacity: 0.17;
+    filter: blur(106.5px);
+    z-index: -5;
+    will-change: transform, opacity;
+}
+
+.c3{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    border-radius: 50%;
+    width: 506px;
+    height: 506px;
+    background: linear-gradient(130.43deg, #44ecf7 -1.47%, #1667e1 93.13%);
+    opacity: 0.15;
+    filter: blur(47px);
+    z-index: -5;
+    will-change: transform, opacity;
+}
